@@ -1,0 +1,455 @@
+/* 
+Theme Name: Arivaci y Cía 
+Theme URI: www.arivaciycia.cl
+Description: Sitio web sobre venta de Moda femenina llamado Arivaci y Cía 
+Version: 1
+Author: Barbara Subero
+Author URI: basubero.laboratoriadiseno2.cl
+*/
+
+/* IMPORTACION TIPOGRAFIAS */
+/* Noto serif display */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800&display=swap');
+/* Red Hat display */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+// VARIABLES
+$color1: #090909;
+$color2: #3B3937;
+$color3: #967F71;
+$white: #ffff;
+$tipografia1: 'Noto Serif Display', serif;
+$tipografia2: 'Red Hat Display', sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* NAV-----------------------------------------------------------------------------------------------------*/
+
+.navbar-nav .nav-link{
+    font-family: $tipografia2;
+    color: $color2;
+    &.active{
+        font-family: $tipografia2;
+        color: $color3;
+    }
+    &:hover{
+        font-family: $tipografia2;
+        color: $color3;
+    }
+}
+/* INDEX---------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ALERTA */
+.bg-alert{
+    background-color: $color3;
+    img{
+        width: 500px;
+        height: 500px;
+    }
+}
+#alerta {
+    z-index: 1000;
+    top: 0; 
+}
+
+
+
+/* SLIDE SWIPER */
+html, header{
+    position: relative;
+    height: 100%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: $white;
+}
+:root{
+    --swiper-theme-color: #ffff;
+}
+
+/* SECCION PRODUCTOS */
+
+.s-productos{
+    
+    .zoom-effect{
+        overflow: hidden;
+
+        img{
+            transition: transform 0.3s ease;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    h2{
+        font-family: $tipografia1;
+        color: $color3;
+        font-weight: 600;
+    }
+    .titulo{
+        top: 70%;
+        left: 10%;
+        right: 10%;
+        font-family: $tipografia1;
+        transition: transform 0.3s ease;
+
+        &:hover{
+            transform: translateY(-10px);
+        }
+    
+        h2{
+            text-shadow: 2px 2px $color2;
+            font-size: 2.5rem;
+            color: $white;
+        }
+        
+        a{
+            color: $white;
+
+            &:hover{
+                text-decoration: none;
+                border: 1px $color2 solid;
+                padding: 10px;
+                background-color: $color2;
+            }
+        }
+    }
+    
+}
+/* SECCION DE INVITACION RECOMENDACIONES */
+.s-recomendaciones{
+
+    img{
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h3{
+        color: $color3;
+        font-size: 2rem;
+        font-family: $tipografia1;
+    }
+
+    p{
+        font-family: $tipografia2;
+        font-size: 20px;
+    }
+}
+.btn-primary{
+    border-color: $color3;
+    color: $color2;
+    padding: 10px;
+    font-family: $tipografia1;
+    background-color: $white;
+    border-radius: 0px;
+
+    &:hover{
+        background-color: $color3;
+        color: $white;
+        border-color: $color3;
+    }
+}
+
+/* SECCION DE INVITACION A COTIZAR */
+
+.s-cotizar{
+    h4{
+        font-family: $tipografia1;
+        color: $white;
+        font-weight: 500;
+    }
+    .btn-outline-primary{
+        border-color: $color3;
+        color: $white;
+        padding: 10px;
+        font-family: $tipografia1;
+        border-radius: 0px;
+    
+        &:hover{
+            background-color: $color3;
+            color: $white;
+            border-color: $color3;
+        }
+    }
+    .bg-position{
+        margin: 140px 0px;
+        left: 8%;
+    }
+    .img-foto{
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+h4{
+    font-family: $tipografia1;
+    color: $color2;
+    font-weight: 500;
+}
+
+/* SOMOS------------------------------------------------------------------------------------------------------------ */
+
+.h-somos{
+    h2{
+        color: $color2;
+        font-size: 2rem;
+        font-family: $tipografia1;
+    }
+    p{
+        font-family: $tipografia2;
+        font-size: 16px;
+    }
+
+}
+.s-empleados{
+
+    .img-t {
+        border-radius: 200px;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    h2{
+        color: $color2;
+        font-size: 2rem;
+        font-family: $tipografia1;
+    }
+}
+/* PRODUCTOS------------------------------------------------------------------------------------------------------------------- */
+
+.productos{
+    .btn-primary{
+        border-color: $color3;
+        color: $color2;
+        padding: 10px;
+        font-family: $tipografia1;
+        background-color: $white;
+        border-radius: 0px;
+        width: 100%;
+        height: auto;
+    
+        &:hover{
+            background-color: $color3;
+            color: $white;
+            border-color: $color3;
+        }
+    }
+    a{
+        text-decoration: none;
+            overflow: hidden;
+
+        img{
+            transition: transform 0.3s ease;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        
+        }
+        p{
+            color: $color1;
+            font-family: $tipografia2;
+        }
+    }
+}
+
+/* SINGLE PRODUCTOS ------------------------------------------------------------------------------ */
+.single-productos{
+    .separador{
+        border-bottom: solid 1px $color1;
+        margin: 5px 0; 
+        max-width: 100%;
+    }
+    h2{
+        font-family: $tipografia1;
+        color: $color3;
+        font-weight: 600;
+    }
+
+    h3{
+        color: $color2;
+        font-size: 2rem;
+        font-family: $tipografia1;
+    }
+    h5{
+        color: $color3;
+        font-family: $tipografia2;
+        font-size: 1.5rem;
+    }
+    p{
+        font-family: $tipografia2;
+        
+        strong{
+            color: $color2;
+    
+        }
+    }
+    .btn-outline-primary{
+        border-color: $color3;
+        color:$color2 ;
+        padding: 10px;
+        font-family: $tipografia1;
+        border-radius: 0px;
+    
+        &:hover{
+            background-color: $color3;
+            color: $white;
+            border-color: $color3;
+        }
+    }
+
+}
+
+
+
+/* RECOMENDACIONES---------------------------------------------------------------------------------- */
+
+.bg-fondo-recomendaciones{
+    background-color: $color2;
+    h2{
+        font-family: $tipografia1;
+        color: $color3;
+        font-weight: 600;
+        text-shadow: 2px 2px $color1;
+    }
+    p{
+        color: $white;
+    }
+    
+    .btn-outline-primary{
+        border-color: $color3;
+        color: $white;
+        padding: 10px;
+        font-family: $tipografia1;
+        border-radius: 0px;
+    
+        &:hover{
+            background-color: $color3;
+            color: $white;
+            border-color: $color3;
+        }
+    }
+
+}
+
+/* PAGINACION */
+.wp-pagenavi{
+    display: flex;
+    justify-content: start;
+}
+.wp-pagenavi span {
+    border: none;
+    border-bottom: 1px solid $color3;
+}
+.wp-pagenavi span.current {
+    border-color: #fff;
+}
+.wp-pagenavi a {
+    border: none;
+    color: $white;
+    font-family: $tipografia2;
+}
+.pages{
+    color: $white;
+    font-family: $tipografia2;
+
+} 
+.current{
+    color: $color3;
+    font-family: $tipografia2;
+}
+
+/* CONTACTO---------------------------------------------------------------------------------------------- */
+.c-ubicacion{
+    background-color: $color3;
+    h4{
+        font-family: $tipografia1;
+        color: $color2;
+        font-weight: 600;
+    }
+    p{
+        color: $white;
+        font-family: $tipografia2;
+        font-size: 16px;
+    }
+}
+.formContact{
+    form{
+        font-family: $tipografia2;
+        font-size: 18px;
+        color: $color2;
+        input text{
+            width: 100%;
+            height: 30px;
+            }
+        }
+        select{
+            width: 100%;
+            height: 30px;
+        }
+        textarea{
+            width: 100%;
+        }
+    }
+.f-contacto{
+    background-color: $color2;
+    h3{
+        font-family: $tipografia1;
+        color: $white;
+    }
+    h4{
+        font-size: 35px;
+        color: $white;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 400px;
+    flex-direction: column;
+    }
+
+/* FOOTER------------------------------------------------------------------------------------------------ */
+footer{
+
+    h2{
+        font-family: $tipografia1;
+        font-size: 30px;
+        color: $color2;
+    }
+
+    p{
+        font-family: $tipografia2;
+        color: $white;
+        font-weight: 400;
+        font-size: 1rem ;
+    }
+}
+.bg-fondo-footer{
+    background: $color3;
+}
