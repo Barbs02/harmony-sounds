@@ -7,34 +7,35 @@ Author: Barbara Subero
 Author URI: basubero.laboratoriadiseno2.cl
 */
 /* IMPORTACION TIPOGRAFIAS */
-/* Noto serif display */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800&display=swap");
-/* Red Hat display */
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+/* Sirin Stencil */
+@import url("https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap");
+/* Noto Serif */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: white;
 }
 
 /* NAV-----------------------------------------------------------------------------------------------------*/
 .navbar-nav .nav-link {
-  font-family: "Red Hat Display", sans-serif;
-  color: #3B3937;
+  font-family: "Noto Serif", serif;
+  color: #FF34B9;
 }
 .navbar-nav .nav-link.active {
-  font-family: "Red Hat Display", sans-serif;
-  color: #967F71;
+  font-family: "Noto Serif", serif;
+  color: #0AFDE7;
 }
 .navbar-nav .nav-link:hover {
-  font-family: "Red Hat Display", sans-serif;
-  color: #967F71;
+  font-family: "Noto Serif", serif;
+  color: #0AFDE7;
 }
 
 /* INDEX---------------------------------------------------------------------------------------------------------------------- */
 /* ALERTA */
 .bg-alert {
-  background-color: #967F71;
+  background-color: #0AFDE7;
 }
 .bg-alert img {
   width: 500px;
@@ -93,22 +94,22 @@ html, header {
   transform: scale(1.1);
 }
 .s-productos h2 {
-  font-family: "Noto Serif Display", serif;
-  color: #967F71;
+  font-family: "Sirin Stencil", sans-serif;
+  color: #0AFDE7;
   font-weight: 600;
 }
 .s-productos .titulo {
   top: 70%;
   left: 10%;
   right: 10%;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
   transition: transform 0.3s ease;
 }
 .s-productos .titulo:hover {
   transform: translateY(-10px);
 }
 .s-productos .titulo h2 {
-  text-shadow: 2px 2px #3B3937;
+  text-shadow: 2px 2px #FF34B9;
   font-size: 2.5rem;
   color: white;
 }
@@ -117,9 +118,9 @@ html, header {
 }
 .s-productos .titulo a:hover {
   text-decoration: none;
-  border: 1px #3B3937 solid;
+  border: 1px #FF34B9 solid;
   padding: 10px;
-  background-color: #3B3937;
+  background-color: #FF34B9;
 }
 
 /* SECCION DE INVITACION RECOMENDACIONES */
@@ -130,46 +131,46 @@ html, header {
      object-fit: cover;
 }
 .s-recomendaciones h3 {
-  color: #967F71;
+  color: #0AFDE7;
   font-size: 2rem;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
 }
 .s-recomendaciones p {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 20px;
 }
 
 .btn-primary {
-  border-color: #967F71;
-  color: #3B3937;
+  border-color: #0AFDE7;
+  color: #FF34B9;
   padding: 10px;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
   background-color: white;
   border-radius: 0px;
 }
 .btn-primary:hover {
-  background-color: #967F71;
+  background-color: #0AFDE7;
   color: white;
-  border-color: #967F71;
+  border-color: #0AFDE7;
 }
 
 /* SECCION DE INVITACION A COTIZAR */
 .s-cotizar h4 {
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
   color: white;
   font-weight: 500;
 }
 .s-cotizar .btn-outline-primary {
-  border-color: #967F71;
+  border-color: #0AFDE7;
   color: white;
   padding: 10px;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
   border-radius: 0px;
 }
 .s-cotizar .btn-outline-primary:hover {
-  background-color: #967F71;
+  background-color: #0AFDE7;
   color: white;
-  border-color: #967F71;
+  border-color: #0AFDE7;
 }
 .s-cotizar .bg-position {
   margin: 140px 0px;
@@ -182,19 +183,19 @@ html, header {
 }
 
 h4 {
-  font-family: "Noto Serif Display", serif;
-  color: #3B3937;
+  font-family: "Sirin Stencil", sans-serif;
+  color: #FF34B9;
   font-weight: 500;
 }
 
 /* SOMOS------------------------------------------------------------------------------------------------------------ */
 .h-somos h2 {
-  color: #3B3937;
+  color: #FF34B9;
   font-size: 2rem;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
 }
 .h-somos p {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 16px;
 }
 
@@ -206,26 +207,26 @@ h4 {
      object-fit: cover;
 }
 .s-empleados h2 {
-  color: #3B3937;
+  color: #FF34B9;
   font-size: 2rem;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
 }
 
 /* PRODUCTOS------------------------------------------------------------------------------------------------------------------- */
 .productos .btn-primary {
-  border-color: #967F71;
-  color: #3B3937;
+  border-color: #0AFDE7;
+  color: #FF34B9;
   padding: 10px;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
   background-color: white;
   border-radius: 0px;
   width: 100%;
   height: auto;
 }
 .productos .btn-primary:hover {
-  background-color: #967F71;
+  background-color: #0AFDE7;
   color: white;
-  border-color: #967F71;
+  border-color: #0AFDE7;
 }
 .productos a {
   text-decoration: none;
@@ -238,74 +239,74 @@ h4 {
   transform: scale(1.1);
 }
 .productos a p {
-  color: #090909;
-  font-family: "Red Hat Display", sans-serif;
+  color: white;
+  font-family: "Noto Serif", serif;
 }
 
 /* SINGLE PRODUCTOS ------------------------------------------------------------------------------ */
 .single-productos .separador {
-  border-bottom: solid 1px #090909;
+  border-bottom: solid 1px white;
   margin: 5px 0;
   max-width: 100%;
 }
 .single-productos h2 {
-  font-family: "Noto Serif Display", serif;
-  color: #967F71;
+  font-family: "Sirin Stencil", sans-serif;
+  color: #0AFDE7;
   font-weight: 600;
 }
 .single-productos h3 {
-  color: #3B3937;
+  color: #FF34B9;
   font-size: 2rem;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
 }
 .single-productos h5 {
-  color: #967F71;
-  font-family: "Red Hat Display", sans-serif;
+  color: #0AFDE7;
+  font-family: "Noto Serif", serif;
   font-size: 1.5rem;
 }
 .single-productos p {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Noto Serif", serif;
 }
 .single-productos p strong {
-  color: #3B3937;
+  color: #FF34B9;
 }
 .single-productos .btn-outline-primary {
-  border-color: #967F71;
-  color: #3B3937;
+  border-color: #0AFDE7;
+  color: #FF34B9;
   padding: 10px;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
   border-radius: 0px;
 }
 .single-productos .btn-outline-primary:hover {
-  background-color: #967F71;
+  background-color: #0AFDE7;
   color: white;
-  border-color: #967F71;
+  border-color: #0AFDE7;
 }
 
 /* RECOMENDACIONES---------------------------------------------------------------------------------- */
 .bg-fondo-recomendaciones {
-  background-color: #3B3937;
+  background-color: #FF34B9;
 }
 .bg-fondo-recomendaciones h2 {
-  font-family: "Noto Serif Display", serif;
-  color: #967F71;
+  font-family: "Sirin Stencil", sans-serif;
+  color: #0AFDE7;
   font-weight: 600;
-  text-shadow: 2px 2px #090909;
+  text-shadow: 2px 2px white;
 }
 .bg-fondo-recomendaciones p {
   color: white;
 }
 .bg-fondo-recomendaciones .btn-outline-primary {
-  border-color: #967F71;
+  border-color: #0AFDE7;
   color: white;
   padding: 10px;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
   border-radius: 0px;
 }
 .bg-fondo-recomendaciones .btn-outline-primary:hover {
-  background-color: #967F71;
+  background-color: #0AFDE7;
   color: white;
-  border-color: #967F71;
+  border-color: #0AFDE7;
 }
 
 /* PAGINACION */
@@ -316,7 +317,7 @@ h4 {
 
 .wp-pagenavi span {
   border: none;
-  border-bottom: 1px solid #967F71;
+  border-bottom: 1px solid #0AFDE7;
 }
 
 .wp-pagenavi span.current {
@@ -326,38 +327,38 @@ h4 {
 .wp-pagenavi a {
   border: none;
   color: white;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Noto Serif", serif;
 }
 
 .pages {
   color: white;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Noto Serif", serif;
 }
 
 .current {
-  color: #967F71;
-  font-family: "Red Hat Display", sans-serif;
+  color: #0AFDE7;
+  font-family: "Noto Serif", serif;
 }
 
 /* CONTACTO---------------------------------------------------------------------------------------------- */
 .c-ubicacion {
-  background-color: #967F71;
+  background-color: #0AFDE7;
 }
 .c-ubicacion h4 {
-  font-family: "Noto Serif Display", serif;
-  color: #3B3937;
+  font-family: "Sirin Stencil", sans-serif;
+  color: #FF34B9;
   font-weight: 600;
 }
 .c-ubicacion p {
   color: white;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 16px;
 }
 
 .formContact form {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 18px;
-  color: #3B3937;
+  color: #FF34B9;
 }
 .formContact form input text {
   width: 100%;
@@ -372,7 +373,7 @@ h4 {
 }
 
 .f-contacto {
-  background-color: #3B3937;
+  background-color: #FF34B9;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -380,7 +381,7 @@ h4 {
   flex-direction: column;
 }
 .f-contacto h3 {
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
   color: white;
 }
 .f-contacto h4 {
@@ -390,17 +391,17 @@ h4 {
 
 /* FOOTER------------------------------------------------------------------------------------------------ */
 footer h2 {
-  font-family: "Noto Serif Display", serif;
+  font-family: "Sirin Stencil", sans-serif;
   font-size: 30px;
-  color: #3B3937;
+  color: #FF34B9;
 }
 footer p {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Noto Serif", serif;
   color: white;
   font-weight: 400;
   font-size: 1rem;
 }
 
 .bg-fondo-footer {
-  background: #967F71;
+  background: #0AFDE7;
 }/*# sourceMappingURL=style.css.map */

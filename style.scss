@@ -8,23 +8,24 @@ Author URI: basubero.laboratoriadiseno2.cl
 */
 
 /* IMPORTACION TIPOGRAFIAS */
-/* Noto serif display */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800&display=swap');
-/* Red Hat display */
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+/* Sirin Stencil */
+@import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+/* Noto Serif */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;500;700&display=swap');
 
 // VARIABLES
-$color1: #090909;
-$color2: #3B3937;
-$color3: #967F71;
+$color1:  #021619;
+$color2:  #FF34B9;
+$color3:  #0AFDE7;
 $white: #ffff;
-$tipografia1: 'Noto Serif Display', serif;
-$tipografia2: 'Red Hat Display', sans-serif;
+$tipografia1: 'Sirin Stencil', sans-serif;
+$tipografia2: 'Noto Serif', serif;
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: $white ;
 }
 
 /* NAV-----------------------------------------------------------------------------------------------------*/
@@ -273,7 +274,7 @@ h4{
         
         }
         p{
-            color: $color1;
+            color:$white;
             font-family: $tipografia2;
         }
     }
@@ -282,7 +283,7 @@ h4{
 /* SINGLE PRODUCTOS ------------------------------------------------------------------------------ */
 .single-productos{
     .separador{
-        border-bottom: solid 1px $color1;
+        border-bottom: solid 1px $white;
         margin: 5px 0; 
         max-width: 100%;
     }
@@ -336,7 +337,7 @@ h4{
         font-family: $tipografia1;
         color: $color3;
         font-weight: 600;
-        text-shadow: 2px 2px $color1;
+        text-shadow: 2px 2px $white;
     }
     p{
         color: $white;
