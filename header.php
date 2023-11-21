@@ -14,29 +14,7 @@
     <link rel="stylesheet" href="<?php echo get_theme_file_uri( 'style.css' ); ?>">
     <?php wp_head(); ?>
 </head>
-<body onload="alerta()">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-
-                <?php if (have_posts()) : ?>
-                    <?php query_posts("category_name=inicio"); ?>
-                <?php while (have_posts()) : the_post(); ?> 
-                <div class="alert bg-alert alert-dismissible fade show position-fixed z-3" role="alert" style="display: none;" id="alerta" data-img="">
-                    <?php 
-                    $image = get_field('imagen_alerta_inicio');
-                    if( !empty( $image ) ): ?>
-                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-                <?php endwhile; ?>	
-                <?php else : ?>  
-                <?php endif; ?>
-                <?php wp_reset_query(); ?>
-            </div>
-        </div>
-    </div>
+<body>
     <!-- Barra de navegacion  -->
 <?php $custom_logo = wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'thumbnail' ); ?>
 <nav class="navbar navbar-expand-md navbar-light bg-fondo p-0 ">
