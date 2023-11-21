@@ -33,42 +33,6 @@ Author URI: basubero.laboratoriadiseno2.cl
 }
 
 /* INDEX---------------------------------------------------------------------------------------------------------------------- */
-/* SLIDE SWIPER */
-html, header {
-  position: relative;
-  height: 100%;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.swiper-button-next, .swiper-button-prev {
-  color: white;
-}
-
-:root {
-  --swiper-theme-color: #ffff;
-}
-
 /* SECCION PRODUCTOS */
 .s-productos .zoom-effect {
   overflow: hidden;
@@ -78,37 +42,6 @@ html, header {
 }
 .s-productos .zoom-effect img:hover {
   transform: scale(1.1);
-}
-
-/* PAGINACION */
-.wp-pagenavi {
-  display: flex;
-  justify-content: start;
-}
-
-.wp-pagenavi span {
-  border: none;
-  border-bottom: 1px solid #0AFDE7;
-}
-
-.wp-pagenavi span.current {
-  border-color: #fff;
-}
-
-.wp-pagenavi a {
-  border: none;
-  color: white;
-  font-family: "Noto Serif", serif;
-}
-
-.pages {
-  color: white;
-  font-family: "Noto Serif", serif;
-}
-
-.current {
-  color: #0AFDE7;
-  font-family: "Noto Serif", serif;
 }
 
 /* FOOTER------------------------------------------------------------------------------------------------ */
