@@ -82,6 +82,26 @@ Template Name: Inicio
         </div>
     </div>
 </section>
+<!-- SECCION DE IMAGEN DESTACADA -->
+<section class="artistas-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto my-5">
+            <h2 class="text-uppercase mb-4">Artistas destacados</h2>
+                <?php if (have_posts()) : ?>
+                    <?php query_posts("category_name=artista&showposts=6&offset=4"); ?>
+                <?php while (have_posts()) : the_post(); ?> 
+                    <?php
+                    echo do_shortcode('[smartslider3 slider="3"]');
+                    ?>
+                <?php endwhile; ?>	
+                <?php else : ?>  
+                <?php endif; ?>
+                <?php wp_reset_query(); ?>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- SECCION DE Populares -->
 <section class="populares">
     <div class="container">
@@ -140,31 +160,7 @@ Template Name: Inicio
         </div>
     </div>
 </section>
-<!-- SECCION DE INVITACION A COTIZAR -->
-<section>
-    <div class="container">
-        <div class="row">
-            <?php if (have_posts()) : ?>
-                <?php query_posts("category_name=invitacion-cotizar"); ?>
-            <?php while (have_posts()) : the_post(); ?> 
-            <?php the_post_thumbnail('full', array('class' => 'img-fluid position-relative img-foto')); ?>
-            <div class="col-md-10  mx-auto bg-dark opacity-75 py-5 position-absolute bg-position"  data-aos="fade-up" data-aos-duration="3000">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4><?php the_title(); ?></h4>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center justify-content-center">
-                        <a href="contacto" class="btn btn-outline-primary ">Cotizar</a>
-                    </div>
-                </div>
-            </div>
-            <?php endwhile; ?>	
-            <?php else : ?>  
-            <?php endif; ?>
-            <?php wp_reset_query(); ?>
-        </div>
-    </div>
-</section>
+
 
 
 <!-- SCRIPTS -->
