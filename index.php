@@ -12,7 +12,7 @@ Template Name: Inicio
         <?php query_posts("category_name=inicio"); ?>
     <?php while (have_posts()) : the_post(); ?> 
     <!-- Swiper -->
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 p-0">
             <div class="swiper mySwiper">
