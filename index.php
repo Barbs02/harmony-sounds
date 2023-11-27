@@ -62,7 +62,7 @@ Template Name: Inicio
                 <?php query_posts("category_name=artista&showposts=10"); ?>
             <?php while (have_posts()) : the_post(); ?> 
 
-                    <div class="col-md-2 position-relative zoom-effect">
+                    <div class="col-md-2 zoom-effect">
                         <a href="<?php the_permalink() ?>" class="btn btn-primary">
                             <div class="card" style="width: 18rem;">
                                 <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
