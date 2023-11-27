@@ -12,7 +12,10 @@ Template Name: Inicio
         <?php query_posts("category_name=inicio"); ?>
     <?php while (have_posts()) : the_post(); ?> 
     <!-- Swiper -->
-    <div class="swiper mySwiper">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <?php 
@@ -40,6 +43,9 @@ Template Name: Inicio
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
+            </div>
+        </div>
+    </div>
     <?php endwhile; ?>	
     <?php else : ?>  
     <?php endif; ?>
