@@ -51,23 +51,26 @@ Template Name: Inicio
     <?php endif; ?>
     <?php wp_reset_query(); ?>
 </header>
-<!-- SECCION DE PRODUCTOS -->
-<section class="s-productos">
+<!-- SECCION DE ARTISTAS -->
+<section class="artistas">
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto my-5">
-            <h2 class="text-uppercase text-center mb-4">Conoce nuestros productos</h2>
+            <h2 class="text-uppercase mb-4">Top 10 canciones mas escuchadas</h2>
             <div class="row">
             <?php if (have_posts()) : ?>
-                <?php query_posts("category_name=productos-inicio&showposts=3"); ?>
+                <?php query_posts("category_name=artista&showposts=10"); ?>
             <?php while (have_posts()) : the_post(); ?> 
 
-                    <div class="col-md-4 position-relative zoom-effect">
-                        <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
-                        <div class="titulo position-absolute text-center">
-                            <h2><?php the_title(); ?></h2>
-                            <a href="http://localhost/arivaci-y-cia/productos/">Ver más</a>
-                        </div>
+                    <div class="col-md-2 position-relative zoom-effect">
+                        <a href="<?php the_permalink() ?>" class="btn btn-primary">
+                            <div class="card" style="width: 18rem;">
+                                <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                <div class="card-body">
+                                    <h5 class="card-title"><?php the_title(); ?></h5>
+                                </div>
+                            </div>
+                        </a>
                     </div>
             <?php endwhile; ?>	
             <?php else : ?>  
