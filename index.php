@@ -9,9 +9,10 @@ Template Name: Inicio
 <!-- HEADER -->
 <header>
     <?php if (have_posts()) : ?>
-        <?php query_posts("category_name=inicio"); ?>
     <?php while (have_posts()) : the_post(); ?> 
-        <div><?php the_content(); ?></div>
+        <?php
+        echo do_shortcode('[smartslider3 slider="2"]');
+        ?>
     <?php endwhile; ?>	
     <?php else : ?>  
     <?php endif; ?>
