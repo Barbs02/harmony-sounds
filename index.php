@@ -9,10 +9,37 @@ Template Name: Inicio
 <!-- HEADER -->
 <header>
     <?php if (have_posts()) : ?>
+        <?php query_posts("category_name=inicio"); ?>
     <?php while (have_posts()) : the_post(); ?> 
-    <?php
-    echo do_shortcode('[smartslider3 slider="2"]');
-    ?>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <?php 
+                    $image = get_field('slide_img_1');
+                    if( !empty( $image ) ): ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+                <div class="swiper-slide">
+                    <?php 
+                    $image = get_field('slide_img_2');
+                    if( !empty( $image ) ): ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+                <div class="swiper-slide">
+                    <?php 
+                    $image = get_field('slide_img_3');
+                    if( !empty( $image ) ): ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     <?php endwhile; ?>	
     <?php else : ?>  
     <?php endif; ?>
