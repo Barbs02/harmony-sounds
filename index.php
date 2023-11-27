@@ -109,7 +109,7 @@ Template Name: Inicio
     </div>
 </section>
 <!-- SECCION DE INVITACION A COTIZAR -->
-<section class="s-cotizar my-5">
+<section>
     <div class="container">
         <div class="row">
             <?php if (have_posts()) : ?>
