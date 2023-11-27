@@ -11,7 +11,7 @@ Template Name: Inicio
     <?php if (have_posts()) : ?>
         <?php query_posts("category_name=inicio"); ?>
     <?php while (have_posts()) : the_post(); ?> 
-     <?php the_content(); ?>
+        <div><?php the_content(); ?></div>
     <?php endwhile; ?>	
     <?php else : ?>  
     <?php endif; ?>
