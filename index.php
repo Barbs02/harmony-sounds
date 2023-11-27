@@ -58,24 +58,25 @@ Template Name: Inicio
             <div class="col-md-10 mx-auto my-5">
             <h2 class="text-uppercase mb-4">Top 10 canciones mas escuchadas</h2>
             <div class="row">
-            <?php if (have_posts()) : ?>
-                <?php query_posts("category_name=artista&showposts=10"); ?>
-            <?php while (have_posts()) : the_post(); ?> 
-
-                    <div class="col-md-2 zoom-effect">
-                        <a href="<?php the_permalink() ?>" class="btn btn-primary">
-                            <div class="card" >
-                                <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
-                                <div class="card-body">
-                                    <h5 class="card-title"><?php the_title(); ?></h5>
+                <div class="col-md-1"></div>
+                <?php if (have_posts()) : ?>
+                    <?php query_posts("category_name=artista&showposts=10"); ?>
+                <?php while (have_posts()) : the_post(); ?> 
+                        <div class="col-md-2 zoom-effect">
+                            <a href="<?php the_permalink() ?>" class="btn btn-primary">
+                                <div class="card" >
+                                    <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php the_title(); ?></h5>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-            <?php endwhile; ?>	
-            <?php else : ?>  
-            <?php endif; ?>
-            <?php wp_reset_query(); ?>
+                            </a>
+                        </div>
+                <?php endwhile; ?>	
+                <?php else : ?>  
+                <?php endif; ?>
+                <?php wp_reset_query(); ?>
+                <div class="col-md-1"></div>
             </div>
             </div>
         </div>
