@@ -1,6 +1,6 @@
 <?php
     function mi_css_personalizado(){
-        wp_enqueue_style('style', get_template_directory_uri().'/style.css', array(), '1.5.2');
+        wp_enqueue_style('style', get_template_directory_uri().'/style.css', array(), '1.5.3');
     }
     add_action('wp_enqueue_scripts', 'mi_css_personalizado');
 
