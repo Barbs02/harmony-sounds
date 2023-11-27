@@ -83,7 +83,7 @@ Template Name: Inicio
     </div>
 </section>
 <!-- SECCION DE INVITACION A RECOMENDACIONES  -->
-<section class="s-recomendaciones">
+<section>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-11 mx-auto my-5">
@@ -146,13 +146,6 @@ Template Name: Inicio
     <!-- SCRIPT AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    // Aparecer primera alerta----------------------------------------------------------
-
-function alerta(){
-    let alert = document.getElementById('alerta');
-    alert.style.display= 'block';
-} 
-
 //Script de swiper----------------------------------------------------------------
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
