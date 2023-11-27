@@ -119,7 +119,7 @@ Template Name: Inicio
             <h2 class="text-uppercase mb-4">Artistas destacados</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
-                    <?php query_posts("category_name=artistas&showposts=6&offset=4"); ?>
+                    <?php query_posts("category_name=artista&showposts=6&offset=4"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
                         <div class="col-md-2 zoom-effect">
                             <a href="<?php the_permalink() ?>">
