@@ -64,7 +64,7 @@ Template Name: Inicio
 
                     <div class="col-md-2 zoom-effect">
                         <a href="<?php the_permalink() ?>" class="btn btn-primary">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card" >
                                 <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
                                 <div class="card-body">
                                     <h5 class="card-title"><?php the_title(); ?></h5>
