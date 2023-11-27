@@ -83,7 +83,7 @@ Template Name: Inicio
     </div>
 </section>
 <!-- SECCION DE Populares -->
-<section class="artistas">
+<section class="populares">
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto my-5">
@@ -111,28 +111,31 @@ Template Name: Inicio
         </div>
     </div>
 </section>
-<!-- SECCION DE INVITACION A RECOMENDACIONES  -->
-<section>
-    <div class="container-fluid">
+<!-- SECCION DE Artistas destacados -->
+<section class="artistas-1">
+    <div class="container">
         <div class="row">
-            <div class="col-md-11 mx-auto my-5">
-                <div class="row">
-                    <?php if (have_posts()) : ?>
-                        <?php query_posts("category_name=recomendaciones-inicio-2"); ?>
-                    <?php while (have_posts()) : the_post(); ?> 
-                        <div class="col-md-6 d-flex align-items-center flex-wrap" data-aos="fade-up" data-aos-duration="3000">
-                            <h3 class="align-self-end mb-4"><?php the_title(); ?></h3>
-                            <p class="align-self-start"><?php the_field('recomendaciones_parrafo_');?></p>
-                            <a href="recomendaciones" class="btn btn-primary align-self-start ">Ver más </a>
+            <div class="col-md-10 mx-auto my-5">
+            <h2 class="text-uppercase mb-4">Artistas destacados</h2>
+            <div class="row">
+                <?php if (have_posts()) : ?>
+                    <?php query_posts("category_name=artistas&showposts=6&offset=4"); ?>
+                <?php while (have_posts()) : the_post(); ?> 
+                        <div class="col-md-2 zoom-effect">
+                            <a href="<?php the_permalink() ?>">
+                                <div class="card" >
+                                    <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php the_title(); ?></h5>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-md-6" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                        <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
-                        </div>
-                    <?php endwhile; ?>	
-                    <?php else : ?>  
-                    <?php endif; ?>
-                    <?php wp_reset_query(); ?>
-                </div>
+                <?php endwhile; ?>	
+                <?php else : ?>  
+                <?php endif; ?>
+                <?php wp_reset_query(); ?>
+            </div>
             </div>
         </div>
     </div>
