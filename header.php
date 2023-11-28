@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- Barra de navegacion  -->
-<?php $custom_logo = wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'thumbnail' ); ?>
+<?php $custom_logo = wp_get_attachment_image( get_theme_mod( 'custom_logo' ), '' ); ?>
 <nav class="navbar navbar-expand-md navbar-light bg-fondo p-0 ">
     <div class="container-fluid">
     <a href="<?php echo home_url(); ?>">

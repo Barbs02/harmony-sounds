@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 Theme Name: Harmony Sounds
 Theme URI: www.harmonysounds.cl
@@ -48,6 +49,11 @@ Author URI: basubero.laboratoriadiseno2.cl
 h2 {
   font-family: "Sirin Stencil", sans-serif;
   font-size: 35px;
+}
+
+.logo img {
+  max-width: 200px; /* Ajusta el tamaño máximo según tus preferencias */
+  height: auto;
 }
 
 /* SECCION PRODUCTOS */
