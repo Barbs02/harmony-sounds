@@ -77,8 +77,8 @@ a {
 
 .img-artistas {
   border-radius: 100%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
