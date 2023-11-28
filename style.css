@@ -33,6 +33,10 @@ Author URI: basubero.laboratoriadiseno2.cl
 }
 
 /* INDEX---------------------------------------------------------------------------------------------------------------------- */
+.color-white {
+  color: white;
+}
+
 h2 {
   font-family: "Sirin Stencil", sans-serif;
   font-size: 35px;
