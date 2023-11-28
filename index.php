@@ -9,6 +9,7 @@ Template Name: Inicio
 <!-- HEADER -->
 <header>
     <?php if (have_posts()) : ?>
+        <?php query_posts("category_name=inicio"); ?>
     <?php while (have_posts()) : the_post(); ?> 
     <!-- Swiper -->
     <div class="container-fluid">
@@ -78,6 +79,7 @@ Template Name: Inicio
         <div class="row">
             <div class="col-md-12 p-0 mx-auto my-5">
                 <?php if (have_posts()) : ?>
+                    <?php query_posts("category_name=inicio"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
                     <?php 
                     $image = get_field('imagen_destacada');
