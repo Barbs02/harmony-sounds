@@ -130,13 +130,11 @@ a {
     .zoom-effect{
         overflow: hidden;
 
-        img{
             transition: transform 0.3s ease;
 
             &:hover{
                 transform: scale(1.1);
             }
-        }
     }
     
 

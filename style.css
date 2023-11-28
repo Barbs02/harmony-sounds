@@ -117,11 +117,9 @@ a {
 /* SECCION PRODUCTOS */
 .zoom-effect {
   overflow: hidden;
-}
-.zoom-effect img {
   transition: transform 0.3s ease;
 }
-.zoom-effect img:hover {
+.zoom-effect:hover {
   transform: scale(1.1);
 }
 
