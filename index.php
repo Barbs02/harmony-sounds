@@ -58,10 +58,10 @@ Template Name: Inicio
             <div class="col-md-10 mx-auto my-5">
             <h2 class="text-uppercase mb-4 color-rose">Top 10 canciones mas escuchadas</h2>
             <div class="row">
-                <div class="col-md-1"></div>
                 <?php if (have_posts()) : ?>
                     <?php query_posts("category_name=artista&showposts=10"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
+                <div class="col-md-1"></div>
                         <div class="col-md-2 zoom-effect">
                             <a href="<?php the_permalink() ?>">
                                 <div class="card" >
@@ -72,11 +72,11 @@ Template Name: Inicio
                                 </div>
                             </a>
                         </div>
+                <div class="col-md-1"></div>        
                 <?php endwhile; ?>	
                 <?php else : ?>  
                 <?php endif; ?>
                 <?php wp_reset_query(); ?>
-                <div class="col-md-1"></div>
             </div>
             </div>
         </div>
@@ -84,7 +84,7 @@ Template Name: Inicio
 </section>
 <!-- SECCION DE IMAGEN DESTACADA -->
 <section class="artistas-1">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 mx-auto my-5">
                 <?php if (have_posts()) : ?>
