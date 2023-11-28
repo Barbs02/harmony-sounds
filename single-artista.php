@@ -61,7 +61,6 @@
         </div>
     </div>
 </div>
-<!-- SECCION RELEVANTES ---------------------- -->
 <!-- SECCION DE Populares -->
 <section class="populares">
     <div class="container">
@@ -91,27 +90,4 @@
         </div>
     </div>
 </section>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            //Script de swiper----------------------------------------------------------------
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-            },
-            pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            },
-            navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            },
-        });
-        </script>
 <?php get_footer(); ?>
