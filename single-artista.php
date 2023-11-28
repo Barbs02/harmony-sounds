@@ -13,6 +13,7 @@
                     </div>
                     <div class="col-md-8">
                         <h2 class="text-uppercase mb-4 color-rose pb-4"><?php the_title(); ?></h2>
+                        <p class="pb-4" ><?php the_field('nombre_cancion');?></p>
                         <p class="pb-4" ><?php the_field('oyentes_artista');?> oyentes mensuales</p>
                         <?php the_content(); ?>
                     </div>
@@ -27,7 +28,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 mx-auto my-5">
-        <h2 class="text-uppercase mb-4 color-rose">Descripción</h2>
+        <h2 class="text-uppercase mb-4 color-blue">Descripción</h2>
             <div class="row">
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?> 
