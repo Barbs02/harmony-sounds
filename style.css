@@ -65,6 +65,16 @@ h2 {
   height: auto;
 }
 
+/* CARDS */
+.bg-black {
+  background-color: none !important;
+  border: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
 /* SLIDE SWIPER */
 .swiper {
   width: 100%;
