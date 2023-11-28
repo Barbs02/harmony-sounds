@@ -137,7 +137,7 @@ Template Name: Inicio
                                 <div >
                                     <?php the_post_thumbnail('full', array('class' => 'img-artistas')); ?>
                                     <div class="card-body pt-4">
-                                        <h5 class="card-title color-rose"><?php the_title(); ?></h5>
+                                        <h5 class="card-title color-rose text-center"><?php the_title(); ?></h5>
                                     </div>
                                 </div>
                             </a>
