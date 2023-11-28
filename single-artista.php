@@ -1,37 +1,25 @@
 <?php get_header(); ?>
 
-<?php 
-$image = get_field('slide_imagen_1_productos');
-if( !empty( $image ) ): ?>
-    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-<?php endif; ?>
 
-<section class="single-productos">
+<section>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10 mx-auto my-5">
             <div class="row">
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?> 
-                <div class="col-md-6 slide ">
-        </div>
-                </div>    
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="my-3"><?php the_title(); ?></h2> <!-- TITULO------ -->
-                            <div class="separador"></div>
-                            <h3><?php the_field('precio_producto'); ?></h3>
-                        </div>
+                    <div class="col-md-4">
+                        <?php 
+                        $image = get_field('slide_imagen_1_productos');
+                        if( !empty( $image ) ): ?>
+                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <?php endif; ?>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 mt-5">
-                        <h5>Descripcion: </h5>  <!-- DESCRIPCION+++++ -->
-                        <p><?php the_field('descripcion_producto_'); ?></p>
-                        <a href="contacto" class="btn btn-outline-primary ">Cotizar</a>
-                        </div>
-                        
-                </div>
+                    <div class="col-md-8">
+                        <h2 class="text-uppercase mb-4 color-rose"><?php the_title(); ?></h2>
+                        <p><?php the_field('oyentes_artista');?> oyentes mensuales</p>
+                        <?php the_content(); ?>
+                    </div>
                 <?php endwhile; ?>	
                 <?php else : ?>  
                 <?php endif; ?>
@@ -40,23 +28,31 @@ if( !empty( $image ) ): ?>
         </div>
     </div>
 </div>
-<!-- SECCION RELEVANTES ---------------------- -->
-<div class="container my-5">
+<div class="container">
     <div class="row">
-        <div class="col-md-10 mx-auto ">
-        <h2 class="mb-4">Estos productos tambien te pueden interesar</h2>
+        <div class="col-md-10 mx-auto my-5">
+        <h2 class="text-uppercase mb-4 color-rose">Descripción</h2>
             <div class="row">
             <?php if (have_posts()) : ?>
-            <?php query_posts("category_name=productos&showposts=4&offset=2 "); ?>
-            <?php while (have_posts()) : the_post(); ?>
-                    <div class="col-md-3">
-                        <div class="imagen">
-                            <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
-                        </div>
+            <?php while (have_posts()) : the_post(); ?> 
+            <div class="col-md-5">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                    <p id="list-item-1"><?php the_field('descripcion_artista');?></p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-2"></div>
+            <?php endwhile; ?>	
+            <?php else : ?>  
+            <?php endif; ?>
 
-                        <p class="my-3"><?php the_title(); ?></p>
-                        <a class="btn btn-outline-primary my-3" href="<?php the_permalink() ?>">Saber +</a>
-                    </div>
+            <?php wp_reset_query(); ?>
+                <?php query_posts("category_name=genero"); ?>
+            <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : the_post(); ?> 
+                <div class="col-md-5">
+                    <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                </div>
             <?php endwhile; ?>	
             <?php else : ?>  
             <?php endif; ?>
@@ -65,6 +61,35 @@ if( !empty( $image ) ): ?>
         </div>
     </div>
 </div>
+<!-- SECCION RELEVANTES ---------------------- -->
+<!-- SECCION DE Populares -->
+<section class="populares">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto my-5">
+            <h2 class="text-uppercase mb-4 color-blue">Más populares</h2>
+            <div class="row">
+                <?php if (have_posts()) : ?>
+                    <?php query_posts("category_name=genero&showposts=6&offset=5"); ?>
+                <?php while (have_posts()) : the_post(); ?> 
+                        <div class="col-md-2 zoom-effect">
+                            <a href="<?php the_permalink() ?>">
+                                <div class="card" >
+                                    <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php the_title(); ?></h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                <?php endwhile; ?>	
+                <?php else : ?>  
+                <?php endif; ?>
+                <?php wp_reset_query(); ?>
+            </div>
+            </div>
+        </div>
+    </div>
 </section>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

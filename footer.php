@@ -1,5 +1,5 @@
 <?php wp_footer(); ?>
-<footer class="bg-fondo-footer">
+<footer >
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-10 mx-auto p-4">
