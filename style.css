@@ -80,11 +80,16 @@ h2 {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  color: white;
+  color: #0AFDE7;
+  background-color: transparent;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: #FF34B9;
 }
 
 :root {
   --swiper-theme-color: #ffff;
+  background-color: transparent;
 }
 
 /* SECCION PRODUCTOS */
