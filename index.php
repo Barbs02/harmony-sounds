@@ -56,7 +56,7 @@ Template Name: Inicio
                 <?php while (have_posts()) : the_post(); ?> 
                         <div class="col-md-3 zoom-effect">
                             <a href="<?php the_permalink() ?>">
-                                <div class="card bg-black" >
+                                <div >
                                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
                                     <div class="card-body bg-black">
                                         <h5 class="card-title color-rose"><?php the_title(); ?></h5>
