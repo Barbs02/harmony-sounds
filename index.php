@@ -107,7 +107,7 @@ Template Name: Inicio
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto my-5">
-            <h2 class="text-uppercase mb-4">Más populares</h2>
+            <h2 class="text-uppercase mb-4 color-blue">Más populares</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
                     <?php query_posts("category_name=genero&showposts=6&offset=3"); ?>
@@ -136,7 +136,7 @@ Template Name: Inicio
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto my-5">
-            <h2 class="text-uppercase mb-4">Artistas destacados</h2>
+            <h2 class="text-uppercase mb-4 color-rose">Artistas destacados</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
                     <?php query_posts("category_name=artista&showposts=6&offset=4"); ?>
