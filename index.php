@@ -56,7 +56,7 @@ Template Name: Inicio
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto my-5">
-            <h2 class="text-uppercase mb-4 color-rose">Top 10 canciones mas escuchadas</h2>
+            <h2 class="text-uppercase mb-4 color-rose">Top 8 canciones mas escuchadas</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
                     <?php query_posts("category_name=genero&showposts=10"); ?>
@@ -108,7 +108,7 @@ Template Name: Inicio
             <h2 class="text-uppercase mb-4 color-blue">Más populares</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
-                    <?php query_posts("category_name=genero&showposts=6&offset=5"); ?>
+                    <?php query_posts("category_name=genero&showposts=6&offset=2"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
                         <div class="col-md-2 zoom-effect">
                             <a href="<?php the_permalink() ?>">
