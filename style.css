@@ -16,6 +16,9 @@ Author URI: basubero.laboratoriadiseno2.cl
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
   background-color: #021619;
 }
 
