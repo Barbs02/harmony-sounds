@@ -78,7 +78,7 @@ h2{
 
 .bg-black{
     background-color: transparent;
-    --bs-bg-opacity: none;
+    --bs-bg-opacity: none !important;
 }
 .card{
     text-decoration: none;
