@@ -92,7 +92,7 @@ Template Name: Inicio
                     <?php 
                     $image = get_field('imagen_destacada');
                     if( !empty( $image ) ): ?>
-                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
                 <?php endwhile; ?>	
                 <?php else : ?>  
