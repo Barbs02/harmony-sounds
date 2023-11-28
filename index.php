@@ -135,7 +135,7 @@ Template Name: Inicio
                         <div class="col-md-3 pt-4 zoom-effect">
                             <a href="<?php the_permalink() ?>">
                                 <div >
-                                    <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                    <?php the_post_thumbnail('full', array('class' => 'img-artistas')); ?>
                                     <div class="card-body pt-4">
                                         <h5 class="card-title color-rose"><?php the_title(); ?></h5>
                                     </div>
