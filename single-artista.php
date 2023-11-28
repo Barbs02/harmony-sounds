@@ -9,11 +9,7 @@
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?> 
                     <div class="col-md-4">
-                        <?php 
-                        $image = get_field('slide_imagen_1_productos');
-                        if( !empty( $image ) ): ?>
-                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                        <?php endif; ?>
+                        <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
                     </div>
                     <div class="col-md-8">
                         <h2 class="text-uppercase mb-4 color-rose"><?php the_title(); ?></h2>
