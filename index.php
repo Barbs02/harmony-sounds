@@ -89,9 +89,11 @@ Template Name: Inicio
             <div class="col-md-10 mx-auto my-5">
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?> 
-                    <?php
-                    echo do_shortcode('[smartslider3 slider="3"]');
-                    ?>
+                    <?php 
+                    $image = get_field('imagen_destacada');
+                    if( !empty( $image ) ): ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
                 <?php endwhile; ?>	
                 <?php else : ?>  
                 <?php endif; ?>
