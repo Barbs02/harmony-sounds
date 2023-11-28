@@ -134,7 +134,7 @@ Template Name: Inicio
                 <?php while (have_posts()) : the_post(); ?> 
                         <div class="col-md-3 pt-4 zoom-effect">
                             <a href="<?php the_permalink() ?>">
-                                <div class="card" >
+                                <div >
                                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
                                     <div class="card-body pt-4">
                                         <h5 class="card-title color-rose"><?php the_title(); ?></h5>
