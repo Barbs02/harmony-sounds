@@ -8,7 +8,7 @@ Template Name: Prueba
 
 <script>
 fetch("https://basubero.laboratoriodiseno2.cl/barb_playlist/wp-json")
-.then(response => response.ok ? response.json():Promise.reject(response))
+.then(response => response.ok ? response.json() :Promise.reject(response))
 .then(data => {
     console.log(data);
 })
