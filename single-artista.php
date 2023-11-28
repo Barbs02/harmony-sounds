@@ -1,5 +1,10 @@
 <?php get_header(); ?>
 
+<?php 
+$image = get_field('slide_imagen_1_productos');
+if( !empty( $image ) ): ?>
+    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+<?php endif; ?>
 
 <section class="single-productos">
 <div class="container-fluid">
@@ -9,40 +14,6 @@
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?> 
                 <div class="col-md-6 slide ">
-                <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <?php 
-                    $image = get_field('slide_imagen_1_productos');
-                    if( !empty( $image ) ): ?>
-                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?>
-                </div>
-                <div class="swiper-slide">
-                    <?php 
-                    $image = get_field('slide_imagen_2_productos');
-                    if( !empty( $image ) ): ?>
-                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?>
-                </div>
-                <div class="swiper-slide">
-                    <?php 
-                    $image = get_field('slide_imagen_3_productos');
-                    if( !empty( $image ) ): ?>
-                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?>
-                </div>
-                <div class="swiper-slide">
-                    <?php 
-                    $image = get_field('slide_imagen_4_productos');
-                    if( !empty( $image ) ): ?>
-                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
         </div>
                 </div>    
                 <div class="col-md-6">
