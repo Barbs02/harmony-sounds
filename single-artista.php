@@ -12,8 +12,8 @@
                         <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
                     </div>
                     <div class="col-md-8">
-                        <h2 class="text-uppercase mb-4 color-rose"><?php the_title(); ?></h2>
-                        <p><?php the_field('oyentes_artista');?> oyentes mensuales</p>
+                        <h2 class="text-uppercase mb-4 color-rose pb-4"><?php the_title(); ?></h2>
+                        <p class="pb-4" ><?php the_field('oyentes_artista');?> oyentes mensuales</p>
                         <?php the_content(); ?>
                     </div>
                 <?php endwhile; ?>	
