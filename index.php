@@ -59,7 +59,7 @@ Template Name: Inicio
             <h2 class="text-uppercase mb-4 color-rose">Top 10 canciones mas escuchadas</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
-                    <?php query_posts("category_name=artista&showposts=10"); ?>
+                    <?php query_posts("category_name=genero&showposts=10"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
                 <div class="col-md-1"></div>
                         <div class="col-md-2 zoom-effect">
