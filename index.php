@@ -49,7 +49,7 @@ Template Name: Inicio
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto my-5">
-            <h2 class="text-uppercase mb-4 color-rose">Top 8 canciones mas escuchadas</h2>
+            <h2 class="text-uppercase mb-4 color-blue">Top 8 canciones mas escuchadas</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
                     <?php query_posts("category_name=genero&showposts=10"); ?>
@@ -59,7 +59,7 @@ Template Name: Inicio
                                 <div class="card" >
                                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
                                     <div class="card-body">
-                                        <h5 class="card-title"><?php the_title(); ?></h5>
+                                        <h5 class="card-title color-rose"><?php the_title(); ?></h5>
                                     </div>
                                 </div>
                             </a>
