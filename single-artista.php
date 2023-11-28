@@ -13,7 +13,7 @@
                     </div>
                     <div class="col-md-8">
                         <h2 class="text-uppercase mb-4 color-rose pb-4"><?php the_title(); ?></h2>
-                        <p class="pb-4" ><?php the_field('nombre_cancion');?></p>
+                        <p class="pb-4" ><strong>Nombre de la canción: </strong><?php the_field('nombre_cancion');?></p>
                         <p class="pb-4" ><?php the_field('oyentes_artista');?> oyentes mensuales</p>
                         <?php the_content(); ?>
                     </div>
