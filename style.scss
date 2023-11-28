@@ -76,16 +76,16 @@ h2{
 }
 /* CARDS */
 
-.card{
-    background-color: transparent !important;
-    border-color: none !important;
-    text-decoration: none;
+.bg-black{
+    background-color: $color1;
 }
-.card-body{
-    background-color: transparent !important;
-    border-color: none !important;
+.card-title{
     text-decoration: none;
+    &:hover{
+        color: $color3;
+    }
 }
+
 
 
 /* SLIDE SWIPER */
