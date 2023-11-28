@@ -1,7 +1,7 @@
 // Aparecer primera alerta----------------------------------------------------------
 
 
-fetch("https://seortizm.laboratoriodiseno2.cl/spotiify/wp-json/wp/v2/posts?_fields=id,acf&acf_format=standard&categories=21")
+fetch("https://basubero.laboratoriodiseno2.cl/barb_playlist/wp-json")
 .then(response => response.json())
 .then(data => {
     caparazon(data);
