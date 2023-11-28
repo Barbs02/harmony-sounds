@@ -55,7 +55,7 @@ Template Name: Inicio
 <section class="artistas">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 mx-auto my-5">
+            <div class="col-md-8 mx-auto my-5">
             <h2 class="text-uppercase mb-4 color-rose">Top 10 canciones mas escuchadas</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
@@ -133,7 +133,7 @@ Template Name: Inicio
 <section class="artistas-1">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 mx-auto my-5">
+            <div class="col-md-8 mx-auto my-5">
             <h2 class="text-uppercase mb-4 color-rose">Artistas destacados</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
