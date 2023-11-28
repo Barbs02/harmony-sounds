@@ -110,7 +110,7 @@ Template Name: Inicio
             <h2 class="text-uppercase mb-4 color-blue">Más populares</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
-                    <?php query_posts("category_name=genero&showposts=6&offset=3"); ?>
+                    <?php query_posts("category_name=genero&showposts=6&offset=5"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
                         <div class="col-md-2 zoom-effect">
                             <a href="<?php the_permalink() ?>">
