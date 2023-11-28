@@ -86,7 +86,7 @@ Template Name: Inicio
 <section class="artistas-1">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 mx-auto my-5">
+            <div class="col-md-12 p-0 mx-auto my-5">
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?> 
                     <?php 
