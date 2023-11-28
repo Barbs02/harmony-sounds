@@ -14,15 +14,15 @@ fetch("https://basubero.laboratoriodiseno2.cl/barb_playlist/wp-json	/wp/v2/posts
 })
 
 fetch("https://basubero.laboratoriodiseno2.cl/barb_playlist/wp-json")
-.then(response => response.json())
+.then(response => response.ok ? response.json() :Promise.reject(response))
 .then(data => {
-    caparazon(data);
+    cards(data);
     console.log(data);
 })
 
-let tarjetas = document.getElementById('rowsito'); // Seleccionar el contenedor
+let tarjetas = document.getElementById('card'); // Seleccionar el contenedor
 
-function caparazon(data) {
+function cards(data) {
     data.forEach(posts => {
 
         const tarjeta = document.createElement('div')
