@@ -33,14 +33,19 @@ Author URI: basubero.laboratoriadiseno2.cl
 }
 
 /* INDEX---------------------------------------------------------------------------------------------------------------------- */
+h2 {
+  font-family: "Sirin Stencil", sans-serif;
+  font-size: 35px;
+}
+
 /* SECCION PRODUCTOS */
-.s-productos .zoom-effect {
+.zoom-effect {
   overflow: hidden;
 }
-.s-productos .zoom-effect img {
+.zoom-effect img {
   transition: transform 0.3s ease;
 }
-.s-productos .zoom-effect img:hover {
+.zoom-effect img:hover {
   transform: scale(1.1);
 }
 
