@@ -98,17 +98,17 @@ Template Name: Inicio
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto my-5">
-            <h2 class="text-uppercase mb-4 color-blue">Más populares</h2>
+            <h2 class="text-uppercase mb-4 color-rose">Más populares</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
                     <?php query_posts("category_name=genero&showposts=6&offset=2"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
-                        <div class="col-md-2 zoom-effect">
+                        <div class="col-md-2 pt-4 zoom-effect">
                             <a href="<?php the_permalink() ?>">
-                                <div class="card" >
+                                <div>
                                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
-                                    <div class="card-body">
-                                        <h5 class="card-title"><?php the_title(); ?></h5>
+                                    <div class="card-body pt-4">
+                                        <h5 class="card-title color-blue"><?php the_title(); ?></h5>
                                     </div>
                                 </div>
                             </a>
@@ -127,17 +127,17 @@ Template Name: Inicio
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto my-5">
-            <h2 class="text-uppercase mb-4 color-rose">Artistas destacados</h2>
+            <h2 class="text-uppercase mb-4 color-blue">Artistas destacados</h2>
             <div class="row">
                 <?php if (have_posts()) : ?>
                     <?php query_posts("category_name=artista&showposts=10"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
-                        <div class="col-md-3 zoom-effect">
+                        <div class="col-md-3 pt-4 zoom-effect">
                             <a href="<?php the_permalink() ?>">
                                 <div class="card" >
                                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
-                                    <div class="card-body">
-                                        <h5 class="card-title"><?php the_title(); ?></h5>
+                                    <div class="card-body pt-4">
+                                        <h5 class="card-title color-rose"><?php the_title(); ?></h5>
                                     </div>
                                 </div>
                             </a>
