@@ -47,7 +47,7 @@
             <?php endif; ?>
 
             <?php wp_reset_query(); ?>
-                <?php query_posts("category_name=genero&cat=8"); ?>
+                <?php query_posts("category_name=genero&cat=7"); ?>
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?> 
                 <div class="col-md-5">
