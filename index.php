@@ -9,7 +9,6 @@ Template Name: Inicio
 <!-- HEADER -->
 <header>
     <?php if (have_posts()) : ?>
-        <?php query_posts("category_name=inicio"); ?>
     <?php while (have_posts()) : the_post(); ?> 
     <!-- Swiper -->
     <div class="container-fluid">
@@ -27,13 +26,6 @@ Template Name: Inicio
                 <div class="swiper-slide">
                     <?php 
                     $image = get_field('slide_img_2');
-                    if( !empty( $image ) ): ?>
-                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?>
-                </div>
-                <div class="swiper-slide">
-                    <?php 
-                    $image = get_field('slide_img_3');
                     if( !empty( $image ) ): ?>
                         <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
