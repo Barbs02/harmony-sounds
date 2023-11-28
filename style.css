@@ -75,6 +75,11 @@ a {
   text-decoration: none !important;
 }
 
+h5 {
+  font-family: "Sirin Stencil", sans-serif;
+  font-size: 20px;
+}
+
 .img-artistas {
   border-radius: 100%;
   width: 130px;

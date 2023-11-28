@@ -1,67 +1,76 @@
 <?php wp_footer(); ?>
-<footer >
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-10 mx-auto p-4">
-            <?php if (have_posts()) : ?>
-                <?php query_posts("category_name=footer"); ?>
-            <?php while (have_posts()) : the_post(); ?>
-            <div class="row d-flex justify-content-evenly">
-                    <div class="col-3">
-                    <?php 
-                    $image = get_field('logo_footer');
-                    if( !empty( $image ) ): ?>
-                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?> 
-                    </div>
-                    <div class="col-md-3">
-                        <h2 class="mb-4">Contacto</h2>
-                        <p><?php the_field('telefono_footer');?></p>
-                        <p><?php the_field('email_footer');?></p>
-                    </div>
-                    <div class="col-md-3">
-                        <h2 class="mb-4">Redes Sociales</h2>
-                        <div class="row">
-                            <div class="col-2 col-sm-3">
-                            <?php 
-                            $image = get_field('logo_facebook_footer');
-                            if( !empty( $image ) ): ?>
-                                <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                            <?php endif; ?> 
-                            </div>
-                            <div class="col-2 col-sm-3">
-                            <?php 
-                            $image = get_field('logo_instagram_footer');
-                            if( !empty( $image ) ): ?>
-                                <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                            <?php endif; ?> 
-                            </div>
-                            <div class="col-2 col-sm-3">
-                            <?php 
-                            $image = get_field('logo_twitter_footer');
-                            if( !empty( $image ) ): ?>
-                                <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                            <?php endif; ?> 
-                            </div>
-                            <div class="col-2 col-sm-3">
-                            <?php 
-                            $image = get_field('logo_pinterest_footer');
-                            if( !empty( $image ) ): ?>
-                                <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                            <?php endif; ?> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php endwhile; ?>	
-            <?php else : ?>  
-            <?php endif; ?>
-            <?php wp_reset_query(); ?>
-                
-            </div>
+
+<footer class="text-center text-lg-start mt-5">
+    <div class="container p-4  mb-5">
+    <!--Grid row-->
+    <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="color-blue">Empresas</h5>
+
+        <ul class="list-unstyled mb-0">
+            <li>
+            <a href="#!" class="color-white">Acerca de</a>
+            </li>
+            <li>
+            <a href="#!" class="color-white">Empleo</a>
+            </li>
+            <li>
+            <a href="#!" class="color-white">For the Record</a>
+            </li>
+        </ul>
         </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="color-rose">Comunidades</h5>
+
+        <ul class="list-unstyled mb-0">
+            <li>
+            <a href="#!" class="color-white">Para artistas</a>
+            </li>
+            <li>
+            <a href="#!" class="color-white">Desarrolladores</a>
+            </li>
+            <li>
+            <a href="#!" class="color-white">Publicidad</a>
+            </li>
+            <li>
+            <a href="#!" class="color-white">Inversores</a>
+            </li>
+            <li>
+            <a href="#!" class="color-white">Proveedores</a>
+            </li>
+        </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="color-blue">Enlaces útiles</h5>
+
+        <ul class="list-unstyled mb-0">
+            <li>
+            <a href="#!" class="color-white">Asistencia</a>
+            </li>
+            <li>
+            <a href="#!" class="color-white">App  móvil</a>
+            </li>
+            <li>
+            <a href="#!" class="color-white">Harmony Sounds</a>
+            </li>
+        </ul>
+        </div>
+
     </div>
-</footer>
+
+    </div>
+
+    <!-- Copyright -->
+
+    <div class="text-center p-3">
+    <a class="text-white" href="#">© 2023 Copyright: Harmony Sounds </a>
+    </div>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
