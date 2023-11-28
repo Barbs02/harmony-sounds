@@ -61,7 +61,7 @@ Template Name: Inicio
                 <?php if (have_posts()) : ?>
                     <?php query_posts("category_name=genero&showposts=10"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
-                        <div class="col-md-2 zoom-effect">
+                        <div class="col-md-3 zoom-effect">
                             <a href="<?php the_permalink() ?>">
                                 <div class="card" >
                                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
@@ -139,7 +139,7 @@ Template Name: Inicio
                 <?php if (have_posts()) : ?>
                     <?php query_posts("category_name=artista&showposts=10"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
-                        <div class="col-md-2 zoom-effect">
+                        <div class="col-md-3 zoom-effect">
                             <a href="<?php the_permalink() ?>">
                                 <div class="card" >
                                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
