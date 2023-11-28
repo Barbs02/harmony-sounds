@@ -78,8 +78,9 @@ h2{
 
 .bg-black{
     background-color: transparent;
+    --bs-bg-opacity: none;
 }
-.card-title{
+.card{
     text-decoration: none;
     &:hover{
         color: $color3;
