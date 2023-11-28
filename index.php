@@ -87,9 +87,7 @@ Template Name: Inicio
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto my-5">
-            <h2 class="text-uppercase mb-4">Artistas destacados</h2>
                 <?php if (have_posts()) : ?>
-                    <?php query_posts("category_name=artista&showposts=6&offset=4"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
                     <?php
                     echo do_shortcode('[smartslider3 slider="3"]');
