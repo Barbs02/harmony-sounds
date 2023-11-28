@@ -77,9 +77,12 @@ h2{
 /* CARDS */
 
 .bg-black{
-    background-color: none;
+    background-color: none !important;
     --bs-bg-opacity: none !important;
-    border: none;
+    border: none !important;
+}
+a{
+    text-decoration: none;
 }
 .card{
     text-decoration: none;
