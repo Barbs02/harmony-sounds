@@ -56,7 +56,7 @@ Template Name: Inicio
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto my-5">
-            <h2 class="text-uppercase mb-4">Top 10 canciones mas escuchadas</h2>
+            <h2 class="text-uppercase mb-4 color-rose">Top 10 canciones mas escuchadas</h2>
             <div class="row">
                 <div class="col-md-1"></div>
                 <?php if (have_posts()) : ?>
