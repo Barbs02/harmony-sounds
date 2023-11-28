@@ -60,8 +60,8 @@
                                 <div>
                                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
                                     <div class="card-body pt-4">
-                                        <h5 class="card-title color-blue"><?php the_title(); ?></h5>
-                                        <?php the_content(); ?>
+                                        <h5 class="card-title color-blue pb-2"><?php the_title(); ?></h5>
+                                        <p><?php the_content(); ?></p>
                                     </div>
                                 </div>
                             </a>
