@@ -61,7 +61,6 @@ Template Name: Inicio
                 <?php if (have_posts()) : ?>
                     <?php query_posts("category_name=genero&showposts=10"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
-                <div class="col-md-1"></div>
                         <div class="col-md-2 zoom-effect">
                             <a href="<?php the_permalink() ?>">
                                 <div class="card" >
@@ -71,8 +70,7 @@ Template Name: Inicio
                                     </div>
                                 </div>
                             </a>
-                        </div>
-                <div class="col-md-1"></div>        
+                        </div>       
                 <?php endwhile; ?>	
                 <?php else : ?>  
                 <?php endif; ?>
