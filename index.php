@@ -54,11 +54,11 @@ Template Name: Inicio
                 <?php if (have_posts()) : ?>
                     <?php query_posts("category_name=genero&showposts=10"); ?>
                 <?php while (have_posts()) : the_post(); ?> 
-                        <div class="col-md-3 zoom-effect">
+                        <div class="col-md-3 pt-4 zoom-effect">
                             <a href="<?php the_permalink() ?>">
                                 <div >
                                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
-                                    <div class="card-body pt-2">
+                                    <div class="card-body pt-3">
                                         <h5 class="card-title color-rose"><?php the_title(); ?></h5>
                                     </div>
                                 </div>

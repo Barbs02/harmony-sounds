@@ -80,14 +80,9 @@ h2{
     background-color: none !important;
     border: none !important;
 }
-a{
-    text-decoration: none;
-}
-.card{
-    text-decoration: none;
-    &:hover{
-        color: $color3;
-    }
+a {
+    text-decoration: none !important;
+    
 }
 
 
