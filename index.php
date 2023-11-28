@@ -58,7 +58,7 @@ Template Name: Inicio
                             <a href="<?php the_permalink() ?>">
                                 <div >
                                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
-                                    <div class="card-body bg-black">
+                                    <div class="card-body pt-2">
                                         <h5 class="card-title color-rose"><?php the_title(); ?></h5>
                                     </div>
                                 </div>
