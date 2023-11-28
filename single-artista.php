@@ -32,28 +32,15 @@
             <div class="row">
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?> 
-            <div class="col-md-5">
+            <div class="col-md-10">
                 <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
                     <p id="list-item-1"><?php the_field('descripcion_artista');?></p>
                 </div>
             </div>
             </div>
-            <div class="col-md-2"></div>
             <?php endwhile; ?>	
             <?php else : ?>  
             <?php endif; ?>
-
-            <?php wp_reset_query(); ?>
-                <?php query_posts("category_name=genero&cat=7"); ?>
-            <?php if (have_posts()) : ?>
-            <?php while (have_posts()) : the_post(); ?> 
-                <div class="col-md-5">
-                    <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
-                </div>
-            <?php endwhile; ?>	
-            <?php else : ?>  
-            <?php endif; ?>
-            <?php wp_reset_query(); ?>
             </div>
         </div>
     </div>
